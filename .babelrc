@@ -1,0 +1,12 @@
+{
+  "presets": [
+    ["@babel/preset-env", { "targets": ["> 0.25%", "last 2 versions", "not dead"] }]
+  ],
+  "plugins": [
+    ["@babel/plugin-transform-runtime"],
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose" : true }]
+  ],
+  "sourceMaps": true,
+  "only": ["./lib"]
+}
