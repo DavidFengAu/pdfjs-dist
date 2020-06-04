@@ -1,8 +1,12 @@
 {
   "name": "@bgl/pdfjs-dist",
-  "version": "2.3.200-1",
+  "version": "2.3.200-8",
   "main": "./dist/build/pdf.js",
   "description": "Generic build of Mozilla's PDF.js library.",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "keywords": [
     "Mozilla",
     "pdf",
@@ -13,7 +17,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "cpBuild": "cp -R ./build ./dist/build",
-    "cpCmaps": "cp -R ./cmaps ./dist/cmaps",
+    "cpCmaps": "cp -R ./cmaps ./dist/lib/web/cmaps",
     "cpImgDecoders": "cp -R ./image_decoders ./dist/image_decoders",
     "build": "rm -rf ./dist && NODE_ENV=production babel lib -d ./dist/lib && yarn cpBuild && yarn cpCmaps && yarn cpImgDecoders"
   },
