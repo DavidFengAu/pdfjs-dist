@@ -1,6 +1,6 @@
 {
   "name": "@bgl/pdfjs-dist",
-  "version": "2.3.200-8",
+  "version": "2.3.200-10",
   "main": "./dist/build/pdf.js",
   "description": "Generic build of Mozilla's PDF.js library.",
   "files": [
